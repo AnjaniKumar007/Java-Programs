@@ -1,0 +1,66 @@
+1. Creation & Basic Info
+
+length()              // Returns length of the string
+isEmpty()             // Checks if string is empty
+isBlank()             // Checks if string is empty or contains only whitespace (Java 11+)
+charAt(int index)     // Returns character at given index
+codePointAt(int index)// Unicode code point at index
+codePointBefore(int index)
+codePointCount(int beginIndex, int endIndex)
+2. Comparison
+
+equals(Object another)             // Compares content
+equalsIgnoreCase(String another)   // Case-insensitive comparison
+compareTo(String another)          // Lexicographical comparison
+compareToIgnoreCase(String another)
+contentEquals(CharSequence cs)
+matches(String regex)              // Matches regex
+regionMatches(...)                 // Compares specific regions
+3. Searching
+contains(CharSequence s)   // Checks if substring exists
+startsWith(String prefix)
+startsWith(String prefix, int offset)
+endsWith(String suffix)
+indexOf(int ch)            // First occurrence of char
+indexOf(String str)
+indexOf(String str, int fromIndex)
+lastIndexOf(int ch)        // Last occurrence of char
+lastIndexOf(String str)
+4. Substring & Extraction
+substring(int beginIndex)
+substring(int beginIndex, int endIndex)
+subSequence(int beginIndex, int endIndex)
+5. Modification (Immutable – returns new String)
+concat(String str)             // Concatenate
+replace(char oldChar, char newChar)
+replace(CharSequence target, CharSequence replacement)
+replaceAll(String regex, String replacement)
+replaceFirst(String regex, String replacement)
+toLowerCase()
+toLowerCase(Locale locale)
+toUpperCase()
+toUpperCase(Locale locale)
+trim()                         // Removes leading/trailing spaces
+strip()                        // Unicode-aware trim (Java 11+)
+stripLeading()
+stripTrailing()
+repeat(int count)              // Repeat string (Java 11+)
+6. Splitting & Joining
+split(String regex)
+split(String regex, int limit)
+join(CharSequence delimiter, CharSequence... elements)
+join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
+
+7. Conversion
+
+toCharArray()                  // Converts to char[]
+getBytes()                     // Converts to byte[]
+getBytes(Charset charset)
+valueOf(...)                   // Converts other types to String
+format(String format, Object... args)
+formatted(Object... args)      // Java 15+
+intern()                       // Places string in string pool
+8. Other Utilities
+
+hashCode()
+toString()
