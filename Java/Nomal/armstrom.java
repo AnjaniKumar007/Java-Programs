@@ -9,7 +9,7 @@ public class armstrom {
             int digits = String.valueOf(num).length();
             while (num!=0){
                 int digit = num % 10;
-                result += (int) Math.round(Math.pow(digit,digits));
+                result += Math.round(Math.pow(digit,digits));
                 
                 num = num/10;
         

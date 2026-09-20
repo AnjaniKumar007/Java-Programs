@@ -11,7 +11,7 @@ public class Electtricity_bill_calculator {
         int f = 100; // fixed cost
         
         int n = in.nextInt();
-        int charge = 0;
+        int charge ;
 
         if (n <= 50) {
             charge = f;  // flat cost
